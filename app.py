@@ -71,7 +71,7 @@ def load_best_model():
     """Loads the best-performing XGBoost model."""
     try:
         # NOTE: Model file name has been fixed back to the expected name for general use.
-        model = joblib.load("C:/Users/vedba/Downloads/Ensemble_Fraud_Detection_Model.joblib")
+        model = joblib.load("Ensemble_Fraud_Detection_Model.joblib")
         return model
     except Exception as e:
         # Do not halt execution, let the UI display the error
