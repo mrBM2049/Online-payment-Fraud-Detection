@@ -75,6 +75,7 @@ def load_best_model():
         return model
     except Exception as e:
         # Do not halt execution, let the UI display the error
+        # Do not halt execution, let the UI display the error
         st.session_state['model_error'] = f"Model Error: {e}. Check if 'Fraud_Detection_Model.joblib' exists."
         return None
 
@@ -171,7 +172,7 @@ def make_prediction(df):
 apply_custom_css()
 st.set_page_config(layout="wide", page_title="Fraud Model Tester")
 
-st.title("💸 AI Fraud Detection System")
+st.title("💸 AI Online Payment Fraud Detection System")
 st.markdown("---")
 
 if 'model_error' in st.session_state:
